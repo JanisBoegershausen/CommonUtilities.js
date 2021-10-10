@@ -62,4 +62,8 @@ class Vector {
     normal = normal.normalized();
     return Vector.Sub(inDirection, Vector.Scale(normal, Vector.Dot(inDirection, normal) * 2)).normalized();
   }
+
+  static Distance(a, b) {
+    return Vector.Sub(a, b).mag();
+  }
 }
