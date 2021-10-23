@@ -9,6 +9,10 @@ function Remap(x, in_min, in_max, out_min, out_max) {
   return out_min + (out_max - out_min) * ((x - in_min) / (in_max - in_min));
 }
 
+function Clamp(x, in_min, in_max) {
+  return Math.min(Math.max(x, in_min), in_max)
+}
+
 function Lerp(a, b, t) {
   return a + (b - a) * t;
 }
