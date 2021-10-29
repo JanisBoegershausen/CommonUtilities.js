@@ -6,9 +6,11 @@ class Color {
     this.a = a != null ? a : 255;
   }
 
+  // Static colors
   static Red = new Color(255, 0, 0, 255);
   static Green = new Color(0, 255, 0, 255);
   static Blue = new Color(0, 0, 255, 255);
+  static Transparent = new Color(0, 0, 0, 0);
 
   // Return a random color with a = 255
   static Random() {
